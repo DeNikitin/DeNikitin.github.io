@@ -2,21 +2,15 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
-.navbar-inverse .navbar-collapse{
-	position: relative;
-}
-.main .navbar-inverse .navbar-nav > li{
-	padding:0 30px;
-}
-.top_header .logo{
-	font-size:32px;
-}
-.top_header .recall a{
-	font-size:14px;
-	padding:10px 5px;
-}
+.navbar-inverse .navbar-nav>li{
+	padding:15px 20px;
+	font-size: 16px;
+}	
 .service .service_item a span{
 	font-size:23px;
+}
+ul.navbar-nav:first-child{
+	margin-left:60px;
 }
 }
 
@@ -25,36 +19,44 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
-.navbar-inverse .navbar-collapse{
-	position: relative;
-}
-.main .navbar-inverse .navbar-nav > li{
-	padding:0 28px;
-	text-align: center;
-}
-.main .navbar-inverse .navbar-nav > li>a{
+.navbar-inverse .navbar-nav>li{
+	padding:15px 12px;
 	font-size: 14px;
-	padding: 15px 7px
+}	
+.navbar-right>li span{
+	font-size:13px !important;
 }
-.top_header .logo{
-	font-size:28px;
-}
-.top_header .row ul{
-	font-size:13px;
-}
-.top_header .row .phone{
-	font-size:18px;
-}
-.top_header .recall a{
+.navbar-brand {
 	font-size:14px;
-	padding:10px 5px;
+	padding-right:0;
 }
-.top_header .time{
-	display: none;
+.header_h1 h1{
+	font-size:22px;
 }
-.top_header .top_contacts{
-	-ms-align-self: center;
-	align-self: center;
+.header_h1 p {
+	font-size: 15px;
+}
+.header_form{
+	padding:10px 20px;
+}
+.header_form h4{
+	font-size:12px;
+	margin:10px auto;
+}
+.form-group{
+	margin-bottom:10px ;
+}
+.form-control{
+	height:30px;
+}
+.header_form .btn-primary{
+	font-size: 12px;
+}
+.service .service_item a span{
+	font-size:23px;
+}
+ul.navbar-nav:first-child{
+	margin-left:30px;
 }
 .service .service_item{
 	height:150px;
@@ -75,35 +77,19 @@
 @media only screen and (max-width : 767px) {
 	ul.navbar-nav{
 		font-size: 15px;
+		text-align: center;
 	}
-.top_header .row .phone{
-	font-size:12px;
+	ul.navbar-nav:first-child{
+		margin:0;
+	}
+.main{
+	height:600px;
 }
-.top_header .top_contacts{
-	-ms-align-self: center;
-	align-self: center;
-}
-.top_header .recall a{
-	font-size:9px;
-	padding:10px 7px;
-}
-.top_contacts>ul>li:last-child{
-	display: none;
-}
-.top_contacts>ul{
-	margin:0;
-}
+.header_h1{
+	text-align: center;
+}	
 .item{
 	min-height: 350px;
-}
-.carousel-inner>.item>img{
-	min-height: 350px;
-}
-.carousel-caption h1{
-		font-size: 25px;
-}
-.carousel-indicators{
-	display: none;
 }
 .service .service_item {
 	height: 100px;
@@ -116,49 +102,11 @@
 .service .service_item a span{
 	font-size: 12px;
 }
-.phone{
-	text-align: center;
-}
-.navbar-inverse .navbar-collapse{
-	margin-top: 50px;
-}
-
-.dropdown-menu li{
-	text-align: center;
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
-	color:#000;
-	padding:15px 10px;
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover{
-	color:#333 !important;
-}
-.top_img h1{
-	font-size:20px;
-}
 .table table{
 	width:500px;
 }
-.contacts{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	-moz-flex-direction: column;
-	-ms-flex-direction: column;
-	-o-flex-direction: column;
-	flex-direction: column;
-	justify-content: center;
-	flex-wrap: wrap;
-}
 .questions .contacts span{
 	margin:20px 0;
-}
-.questions .contacts i{
-	margin:0;
-	margin-right:10px;
 }
 }
 
@@ -166,42 +114,15 @@
 	ul.navbar-nav{
 		font-size: 15px;
 	}
-.img-responsive{
-	margin:0 auto;
-}
-.top_header .row .phone{
-	font-size:25px;
-}
-.top_header .logo{
-	text-align: center;	
-}	
-.top_header .row>div{
-	margin-bottom:30px;
-}
-.top_header .row .recall{
-	padding: 10px 15px;
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-	color:#000;
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus{
-	color:#333!important;
+.main{
+	height:700px
 }
 .item{
-	min-height: 350px;
-}
-.carousel-caption h1{
-	font-size: 20px;
-}
-.carousel-inner>.item>img{
 	min-height: 350px;
 }
 .service .service_item a{
 	width:570px;
 	height:180px;
-}
-.carousel-indicators{
-	display: none;
 }
 .service .service_item{
 	height:180px;
@@ -209,12 +130,23 @@
 .service .service_item a span{
 	font-size: 18px;
 }
-
-.top_img h1{
-	font-size:16px;
-}
 .table table{
 	width:400px;
+}
+.footer{
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction: column;
+}
+.footer .footer_phone{
+	position: relative;
+	margin:0 0 50px;
+	justify-content: center;
+}
+.footer .btn-primary{
+	-ms-align-self: center;
+	align-self: center;
+}
 }
 
 
@@ -223,23 +155,7 @@
 .item{
 	min-height: 550px;
 }
-.carousel-inner>.item>img{
-	object-fit: cover;
-	min-height: 550px;
-}
-.carousel-indicators{
-	display: none;
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-	color:#000;
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover{
-	color:#333;
-}
-.wrapper .tabs .tab{
-	font-size: 16px;
-	padding: 15px 20px;
-}
+
 .service .service_item a{
 	width:470px;
 	height:150px;

@@ -21,12 +21,6 @@ $(document).ready(function() {
 		return false;
 	});
 
- $('#menu-menu-1 a').each(function(index){
-     if ($(this).attr('href') == window.location) {
-        $(this).css({'background':'linear-gradient(#f4893b, #ef5f31)'});
-    }
-    });
-
   $('.popup').magnificPopup({
     type:'inline'
 }); 
@@ -34,7 +28,7 @@ $(document).ready(function() {
   $("form").submit(function() {
         $.ajax({
             type: "POST",
-            url: "send.php",
+            url: "mail.php",
             data: $(this).serialize()
         }).done(function() {
             alert("Спасибо за заявку!");

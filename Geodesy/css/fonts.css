@@ -7,11 +7,11 @@
 	src:url(../fonts/OpenSansBold/OpenSansBold.ttf);
 }
 @font-face {
-	font-family:'UbuntuMedium';
-	src:url(../fonts/UbuntuBold/UbuntuMedium.ttf);
+	font-family:'FiraSans';
+	src:url(../fonts/FiraSans/FiraSans/FiraSans.ttf);
 }
 @font-face {
-	font-family:'RussoOne';
-	src:url(../fonts/RussoOne/RussoOne.ttf);
+	font-family:'FiraSansBold';
+	src:url(../fonts/FiraSans/FiraSansBold/FiraSansBold.ttf);
 }
 
